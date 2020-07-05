@@ -13,19 +13,19 @@ class ArtikelSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('artikel')->insert([
-            [
-                'judul' => Str::random(10),
-                'isi' => Str::random(30),
-                'slug' => Str::random(10),
-                'tag' => Str::random(20),
-            ],
-            [
-                'judul' => Str::random(10),
-                'isi' => Str::random(30),
-                'slug' => Str::random(10),
-                'tag' => Str::random(20),
-            ]
-        ]);
+        // DB::table('artikel')->insert([
+        //     [
+        //         'judul' => Str::random(10),
+        //         'isi' => Str::random(30),
+        //         'slug' => Str::random(10),
+        //         'tag' => Str::random(20),
+        //     ],
+        //     [
+        //         'judul' => Str::random(10),
+        //         'isi' => Str::random(30),
+        //         'slug' => Str::random(10),
+        //         'tag' => Str::random(20),
+        //     ]
+        // ]);
     }
 }
