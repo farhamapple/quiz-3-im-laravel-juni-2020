@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
       <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas fa-newspaper"></i>
       </div>
@@ -13,37 +13,37 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-      <a class="nav-link" href="index.html">
+      <a class="nav-link" href="/">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a>
     </li>
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="/articleslist">
           <i class="fas fa-fw fa-newspaper"></i>
           <span>Articles</span></a>
       </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider">
-
+    @if ($logged == 1)
     <!-- Heading -->
     <div class="sidebar-heading">
       Users
     </div>
 
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="/profile">
         <i class="fas fa-fw fa-user"></i>
         <span>Profile</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="/articles">
         <i class="fas fa-fw fa-newspaper"></i>
         <span>My Articles</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="/followers">
         <i class="fas fa-fw fa-users"></i>
         <span>Followers List </span></a>
     </li>
@@ -52,12 +52,21 @@
     <hr class="sidebar-divider">
 
 
-    <!-- Nav Item - Charts -->
-    <li class="nav-item">
-      <a class="nav-link" href="charts.html">
-        <i class="fas fa-fw fa-lock"></i>
-        <span>Login</span></a>
-    </li>
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+            <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-sign-out-alt"></i>
+            <span>Log Out</span></a>
+        </li>
+    @else
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+            <a class="nav-link" href="/login">
+            <i class="fas fa-fw fa-lock"></i>
+            <span>Login</span></a>
+        </li>
+    @endif
+
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

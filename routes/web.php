@@ -13,8 +13,12 @@
 
 Route::get('/', 'DashboardController@index');
 
-Route::get('/login', 'LoginController@show');
+Route::get('/login', 'LoginController@index');
+Route::post('/login', 'LoginController@loginuser');
 Route::get('/logout', 'LoginController@logout');
+
+// Articles
+Route::get('/articles', 'ArticlesController@index');
 
 Route::get('/items/create', 'ItemController@create'); // menampilkan halaman form
 Route::post('/items', 'ItemController@store'); // menyimpan data
