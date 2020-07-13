@@ -26,7 +26,7 @@
 
     <!-- Divider -->
     <hr class="sidebar-divider">
-    @if ($logged == 1)
+
     <!-- Heading -->
     <div class="sidebar-heading">
       Users
@@ -58,14 +58,13 @@
             <i class="fas fa-fw fa-sign-out-alt"></i>
             <span>Log Out</span></a>
         </li>
-    @else
+
         <!-- Nav Item - Charts -->
         <li class="nav-item">
             <a class="nav-link" href="/login">
             <i class="fas fa-fw fa-lock"></i>
             <span>Login</span></a>
         </li>
-    @endif
 
 
     <!-- Divider -->
